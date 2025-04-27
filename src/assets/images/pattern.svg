@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <!-- Pokemon type symbols -->
+        <symbol id="fire" viewBox="0 0 20 20">
+            <path d="M10 2 L15 15 L10 18 L5 15 Z" fill="#F08030" />
+        </symbol>
+        <symbol id="water" viewBox="0 0 20 20">
+            <path d="M10 2 C15 8, 15 12, 10 18 C5 12, 5 8, 10 2" fill="#6890F0" />
+        </symbol>
+        <symbol id="electric" viewBox="0 0 20 20">
+            <path d="M10 2 L15 10 L10 18 L5 10 Z" fill="#F8D030" />
+        </symbol>
+        <symbol id="grass" viewBox="0 0 20 20">
+            <path d="M10 2 L15 15 L10 18 L5 15 Z" fill="#78C850" />
+        </symbol>
+
+        <!-- Pattern definition -->
+        <pattern id="pokemon-pattern" x="0" y="0" width="50" height="50" patternUnits="userSpaceOnUse">
+            <!-- Background -->
+            <rect width="50" height="50" fill="#FFFFFF" />
+
+            <!-- Pokemon type symbols -->
+            <use href="#fire" x="5" y="5" width="10" height="10" />
+            <use href="#water" x="35" y="5" width="10" height="10" />
+            <use href="#electric" x="5" y="35" width="10" height="10" />
+            <use href="#grass" x="35" y="35" width="10" height="10" />
+
+            <!-- Decorative lines -->
+            <line x1="0" y1="25" x2="50" y2="25" stroke="#E0E0E0" stroke-width="1" />
+            <line x1="25" y1="0" x2="25" y2="50" stroke="#E0E0E0" stroke-width="1" />
+        </pattern>
+    </defs>
+
+    <!-- Pattern background -->
+    <rect width="100" height="100" fill="url(#pokemon-pattern)" />
+</svg>
